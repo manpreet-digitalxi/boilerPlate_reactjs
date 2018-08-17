@@ -1,0 +1,108 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: $secondary-font !important;
+  box-sizing: border-box;
+  font-size: 1.4rem;
+  color: $text-color-dark;
+  line-height: 1.3;
+  background: $bg-color;
+}
+
+#root {
+  //To keep the footer at thebottom of the page
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  font-family: $primary-font;
+}
+
+h4.semi-heading {
+  margin-bottom: 1.5rem;
+  font-family: $secondary-font;
+}
+
+h3.page-heading {
+  padding-bottom: 1.5rem;
+  margin-bottom: 3rem;
+  position: relative;
+  &::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background: $text-color-dark;
+  }
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+h4 {
+  font-size: 2rem;
+}
+
+h5 {
+  font-size: 1.5rem;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  background: none;
+}
+
+button:focus,
+button:active,
+input:active,
+input:focus,
+textarea:focus,
+textarea:active {
+  outline: none !important;
+}
+
+.notFound {
+  flex-direction: column;
+  height: 80vh;
+}

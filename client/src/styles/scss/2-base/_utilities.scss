@@ -1,0 +1,21 @@
+.container {
+  width: 80%;
+  margin: auto;
+  height: 100%;
+}
+
+.flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flexFit {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.text-center {
+  text-align: center;
+}

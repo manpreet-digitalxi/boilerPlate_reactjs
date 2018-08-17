@@ -1,0 +1,366 @@
+@keyframes spin {
+  0% {
+    transform: rotate(0);
+    transform-origin: center center; }
+  100% {
+    transform: rotate(360deg);
+    transform-origin: center center; } }
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol,
+ul {
+  list-style: none; }
+
+blockquote,
+q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: "Montserrat", sans-serif !important;
+  box-sizing: border-box;
+  font-size: 1.4rem;
+  color: #475C8A;
+  line-height: 1.3;
+  background: #FBFBFB; }
+
+#root {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column; }
+
+main {
+  flex: 1; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  font-family: "Fjalla One", sans-serif; }
+
+h4.semi-heading {
+  margin-bottom: 1.5rem;
+  font-family: "Montserrat", sans-serif; }
+
+h3.page-heading {
+  padding-bottom: 1.5rem;
+  margin-bottom: 3rem;
+  position: relative; }
+  h3.page-heading::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background: #475C8A; }
+
+h1 {
+  font-size: 5rem; }
+
+h2 {
+  font-size: 4rem; }
+
+h3 {
+  font-size: 3rem; }
+
+h4 {
+  font-size: 2rem; }
+
+h5 {
+  font-size: 1.5rem; }
+
+li {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+button {
+  border: none;
+  background: none; }
+
+button:focus,
+button:active,
+input:active,
+input:focus,
+textarea:focus,
+textarea:active {
+  outline: none !important; }
+
+.notFound {
+  flex-direction: column;
+  height: 80vh; }
+
+.container {
+  width: 80%;
+  margin: auto;
+  height: 100%; }
+
+.flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.flexFit {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.text-center {
+  text-align: center; }
+
+.header {
+  background: #39ACFC;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #39ACFC, #39CFFD);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #39ACFC, #39CFFD);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  width: 100%;
+  height: 7rem;
+  box-shadow: 0 4px 26px -2px rgba(0, 0, 0, 0.3); }
+  .header__title {
+    background: #fff;
+    padding: 6px 24px;
+    border-radius: 5px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2); }
+    .header__title h1 {
+      background-image: -webkit-linear-gradient(to left, #39ACFC, #39CFFD);
+      /* Chrome 10-25, Safari 5.1-6 */
+      background-image: linear-gradient(to left, #39ACFC, #39CFFD);
+      /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      color: transparent;
+      -webkit-background-clip: text;
+      background-clip: text;
+      font-size: 3rem !important; }
+
+footer {
+  background: #39ACFC;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #39ACFC, #39CFFD);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #39ACFC, #39CFFD);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  height: 50px;
+  color: #fff;
+  width: 100%;
+  font-weight: 300;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 1px;
+  font-size: 1.2rem; }
+
+.nav {
+  height: 100%; }
+  @media only screen and (max-width: 47.5em) {
+    .nav .navigation {
+      display: none; } }
+  .nav .navigation.open {
+    display: block;
+    transform: translateY(50%);
+    transition: transform .3s ease-in;
+    background: #39CFFD;
+    padding: 1.5rem;
+    z-index: 99;
+    border-radius: 3px;
+    margin-right: 2rem; }
+    .nav .navigation.open ul {
+      flex-direction: column;
+      width: 15rem; }
+      .nav .navigation.open ul li {
+        margin-bottom: 2rem;
+        margin-right: 0; }
+        .nav .navigation.open ul li:first-child {
+          border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+          padding-bottom: 1rem;
+          margin-bottom: 2rem; }
+        .nav .navigation.open ul li:nth-child(3) {
+          margin-top: 1rem; }
+  .nav__list {
+    display: flex;
+    height: 100%; }
+  .nav__item {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 1.6rem;
+    color: #fff;
+    margin-right: 2rem;
+    font-weight: 500;
+    font-size: 1.5rem; }
+    .nav__item .username {
+      text-transform: capitalize;
+      font-family: "Fjalla One", sans-serif;
+      font-size: 1.6rem;
+      color: #475C8A; }
+  .nav__link {
+    font-size: 1.5rem;
+    color: #fff;
+    transform: scale(1);
+    padding-bottom: 10px;
+    -webkit-transition: all, 0.3s;
+    -moz-transition: all, 0.3s;
+    -ms-transition: all, 0.3s;
+    -o-transition: all, 0.3s;
+    transition: all, 0.3s; }
+    .nav__link:hover {
+      border-bottom: 2px solid #475C8A;
+      color: #475C8A; }
+    .nav__link i {
+      margin-right: 5px; }
+  @media only screen and (min-width: 47.5em) {
+    .nav__toggle {
+      display: none; } }
+  .nav__toggle .toggle-button {
+    width: 35px;
+    height: 37px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    justify-content: space-around; }
+    .nav__toggle .toggle-button:focus {
+      outline: none; }
+  .nav__toggle .toggle-button-line {
+    width: 35px;
+    height: 3px;
+    background: #fff;
+    border-radius: 2px; }
+
+.container {
+  width: 500px;
+  margin: 24px auto; }
+
+/*# sourceMappingURL=main.css.map */

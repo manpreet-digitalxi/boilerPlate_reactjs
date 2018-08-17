@@ -1,0 +1,44 @@
+{
+  "name": "client",
+  "version": "0.1.0",
+  "private": true,
+  "jest": {
+    "verbose": true,
+    "testURL": "http://localhost/"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "node-sass": "^4.9.2",
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0",
+    "react-redux": "^5.0.7",
+    "react-responsive-modal": "^3.0.3",
+    "react-router-dom": "^4.3.0",
+    "react-scripts": "1.1.4",
+    "redux": "^4.0.0",
+    "redux-devtools-extension": "^2.13.4",
+    "redux-logger": "^3.0.6",
+    "redux-saga": "^0.16.0",
+    "reselect": "^3.0.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "jest",
+    "eject": "react-scripts eject",
+    "sass": "sass --watch src/styles/scss:src/styles/css",
+    "sass:build": "sass --update src/styles/scss:src/styles/css"
+  },
+  "devDependencies": {
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "enzyme-to-json": "^3.3.4",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-prettier": "^2.6.0",
+    "jest": "^23.4.2",
+    "prettier": "^1.13.4",
+    "react-test-renderer": "^16.4.2",
+    "sinon": "^6.1.4"
+  }
+  
+}
